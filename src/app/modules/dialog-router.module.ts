@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
-import { RouterModule } from '@angular/router';
 import { DialogResolverService } from '../services/dialog-resolver.service';
 
 @NgModule({
