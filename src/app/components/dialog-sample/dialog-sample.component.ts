@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog'
 import { ActivatedRoute } from '@angular/router';
-import { DialogResolverService } from '../services/dialog-resolver.service';
+import { DialogResolverService } from '../../services/dialog-resolver.service';
 
 @Component({
   selector: 'app-dialog-sample',

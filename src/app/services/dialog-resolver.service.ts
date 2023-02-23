@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
 import { tap, takeUntil, take, mapTo, map } from 'rxjs/operators';
-import { DialogRouteConfig } from './models/dialog-route-config.model';
+import { DialogRouteConfig } from '../models/dialog-route-config.model';
 
 @Injectable()
 export class DialogResolverService implements Resolve<MatDialogRef<any>> {

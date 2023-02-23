@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { DialogRouterModule } from './services/dialog-router.module';
+import { DialogRouterModule } from './modules/dialog-router.module';
 import { DialogResolverService } from './services/dialog-resolver.service';
-import { DialogSampleComponent } from './dialog-sample/dialog-sample.component';
-import { DialogRouteConfig } from './services/models/dialog-route-config.model';
-import { RegularComponent } from './regular/regular.component';
-import { MenuComponent } from './menu/menu.component';
+import { DialogSampleComponent } from './components/dialog-sample/dialog-sample.component';
+import { DialogRouteConfig } from './models/dialog-route-config.model';
+import { RegularComponent } from './components/regular/regular.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 const routes: Routes = [
   {

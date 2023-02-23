@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { DialogResolverService } from '../services/dialog-resolver.service';
+import { DialogResolverService } from '../../services/dialog-resolver.service';
 
 @Component({
   selector: 'app-menu',
