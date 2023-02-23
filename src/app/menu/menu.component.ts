@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DialogResolverService } from '../services/dialog-resolver.service';
 
 @Component({
   selector: 'app-menu',
@@ -11,11 +12,11 @@ export class MenuComponent {
     name: 'Gabriel'
   }
   
-  constructor(private router: Router ) {
+  constructor(private dialogSvc: DialogResolverService ) {
   }
 
-  navigate() {
-    this.router.navigate(['/0'], {state: {data: {dlg: {data: this.data}}}})
+  navigate(path: string, data?: any) {
+    this.dialogSvc.customNavigation(path, data)
   }
 
 }

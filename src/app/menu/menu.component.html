@@ -1,14 +1,10 @@
+<p>I'm the home with a menu</p>
 <div>
-    <a routerLink="">App</a>
-  </div>
-  <div>
-    <!-- <button (click)="navigate()">Dialog</button> -->
-    <a routerLink="0">Dialog</a>
-
-  </div>
-  <div>
-    <a routerLink="1">RoutConfigoptions</a>
-  </div>
-  <div>
-    <a routerLink="regular">Regular</a>
-  </div>
+  <button style="all: unset; cursor: pointer;" (click)="navigate('/0', data)">Simple Dialog with custom data</button>
+</div>
+<div>
+  <button style="all: unset; cursor: pointer;" (click)="navigate('/1')">Dialog with mat-dialog custom config</button>
+</div>
+<div>
+  <button style="all: unset; cursor: pointer;" (click)="navigate('/regular')">Regular component</button>
+</div>
