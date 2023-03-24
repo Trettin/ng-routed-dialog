@@ -14,7 +14,7 @@ export class DialogSampleComponent {
     @Inject(MAT_DIALOG_DATA) public data: any,
     private dialogSvc: DialogResolverService
     ) {
-      console.log('Injected Data: ', {data, dialogData: this.dialogSvc.getData()})
-      if (!!this.dialogSvc.getData()) this._data = this.dialogSvc.getData();
+      console.log('Injected Data: ', {data, dialogData: this.dialogSvc.getCustomParams()})
+      if (!!this.dialogSvc.getCustomParams()) this._data = this.dialogSvc.getCustomParams();
   }
 }

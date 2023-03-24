@@ -55,10 +55,10 @@ export class DialogResolverService implements Resolve<MatDialogRef<any>> {
 
   public customNavigation(path: string, data?: any) {
     this.data = data;
-    this.router.navigate([path], {state: data})
+    this.router.navigate([path])
   }
 
-  public getData() {
+  public getCustomParams() {
     return this.data;
   }
 }
